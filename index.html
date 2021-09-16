@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script src="html5-qrcode.min.js"></script>
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<div id="reader" width="600px" class="reader"></div>
+		<div class="reader-actions">
+			<div class="content">
+				<div class="scan-data" hidden >
+					<div>Merchant name: </div>
+					<input class="merchant-name">
+					<div>Merchant UUID: </div>
+					<input class="merchant-uuid">
+				</div>
+				<input type="button" class="start-button" id="start_button" value="Start Scan" />
+				<input type="button" class="start-pay-button" value="Start Pay" hidden/>
+			</div>
+		</div>
+	</body>
+</html>

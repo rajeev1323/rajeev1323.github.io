@@ -1,0 +1,20 @@
+{
+  "name": "barcode-scanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf public/",
+    "start": "npm run clean && webpack && node ./core/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "express": "^4.17.1",
+    "html5-qrcode": "^2.0.11",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
