@@ -85,14 +85,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	// const merchantUuid = document.querySelector('.merchant-uuid');
 
 	const onScanSuccess = function (text, data) {
-		// console.log("$$$$$$$$$$$$$");
-		// console.log(text);
-		// console.log(data);
 		const json = getJson(text);
 		// merchantName.value = json.merchant_name;
 		// merchantUuid.value = json.merchant_id;
 		document.querySelector('#spinner').hidden = false;
-		window.location.href = text; //`http://localhost:8000/mybucks?qrPayment=true&merchantId=${json.merchant_id}`;
+		window.location.href = '/redeem'; //`http://localhost:8000/mybucks?qrPayment=true&merchantId=${json.merchant_id}`;
 		// actionsBox.hidden = false;
 		// startButton.value ='Scan Another';
 		// scanData.hidden = false;

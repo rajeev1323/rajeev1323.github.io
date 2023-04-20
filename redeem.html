@@ -5,19 +5,21 @@
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <!-- <script src="html5-qrcode.min.js"></script> -->
     <!-- <script src="main.js"></script> -->
-    <script>
-        function handleSubmit(e) {
-            e.preventDefault();
-            window.location.href = "http://localhost:3001/thankyou";
-        }
-    </script>
 </head>
 
 <body style="text-align: center; font-size: 35px;">
     <h3>Please enter pin to redeem the voucher</h3>
+    <label for="code">Redemption Code</label>
+    <input id="code" disabled value="1234567" />
+    <br />
+    <br />
+    <label for="name">Customer Name</label>
+    <input id="name" disabled value="Guest Customer" />
+    <br />
+    <br />
     <input style="width: 470px; height: 75px; font-size: 35px; margin-top: 100px;" type="tel" placeholder="Enter Pin" />
     <br /><br />
-    <a href="http://localhost:3001/thankyou">Redeem</a>
+    <a href="/thankyou">Redeem</a>
 </body>
 
 </html>

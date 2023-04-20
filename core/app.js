@@ -9,7 +9,7 @@ app.use('/scan', (req, res) => {
     res.sendFile(path.join(path.resolve(), '/index.html'));
 });
 
-app.use('/redeem/voucher/10321', (req, res) => {
+app.use('/redeem', (req, res) => {
     res.sendFile(path.join(path.resolve(), '/redeem.html'));
 });
 
